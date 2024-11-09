@@ -26,7 +26,7 @@ class AccountInfo:
             elif(s=="ZZZ"):
                 self.target_games.append(Game.ZZZ)
 
-async def claim(account: AccountInfo, lang: str="ko-kr"):
+async def claim(account: AccountInfo, lang: str="en-us"):
     from genshin import Client, InvalidCookies, AlreadyClaimed
 
     client=Client(
